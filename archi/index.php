@@ -96,9 +96,114 @@ require_once "nav.php";
     <section class="dark">
       
         <h1>Events</h1>
-        <p>Nesciunt, distinctio itaque quam labore corporis architecto minima. Odit expedita incidunt ea corporis sunt
-            molestiae neque earum, eos accusamus voluptatum nam dolorum alias repellendus cupiditate? Impedit delectus
-            architecto laborum deserunt.</p>
+        <div class="container-timeline">
+        <div class="top-section">
+            <h1>Animated Timeline</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem magnam aut provident ab vel, voluptatem,
+                nisi quisquam error nihil sit quasi odio itaque corrupti minus amet nam. Exercitationem, nesciunt.
+
+            </p>
+        </div>
+        <div class="timeline">
+            <div class="line"></div>
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-timeline">
+                    <h2>Pendaftaran Early Bird Architecture Festival Ke-16</h2>
+                    <p>
+                        Hari, Tanggal : 19 Dec 2022 - 31 Dec 2022 <br>
+                        Tempat : Online via Google Form (petra.id/ArchFest2023RegistrationForm) <br>
+                        Waktu : Pk. 00:00-23:59 WIB
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-timeline">
+                    <h2>Pendaftaran Normal Architecture Festival Ke-16</h2>
+                    <p>
+                        Hari, Tanggal : 01 Jan 2023 - 31 Jan 2023 <br>
+                        Tempat : Online via Google Form (petra.id/ArchFest2023RegistrationForm) <br>
+                        Waktu : Pk. 0.00-23.59 WIB
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-timeline">
+                    <h2>Pengumpulan Karya (Online) Architecture Festival Ke-16</h2>
+                    <p>
+                        Hari, Tanggal : 01 Januari 2023 - 11 Februari 2023 <br>
+                        Tempat : Online via email <br>
+                        Waktu : Pk. 22.00 WIB
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-timeline">
+                    <h2>Penjurian Tertutup Architecture Festival Ke-16</h2>
+                    <p>
+                        Hari, Tanggal : 21 Februari 2023 <br>
+                        Tempat : Online via zoom (petra.id/Archfest2023) <br>
+                        Waktu : Pk. 12.00-16.25 WIB
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-timeline">
+                    <h2>Pengumuman Top 25 Architecture Festival Ke-16</h2>
+                    <p>
+                        Hari, Tanggal : 23 Februari 2023 <br>
+                        Tempat : Online via instagram <br>
+                        Waktu : Pk. 18.00 WIB
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-timeline">
+                    <h2>Pengumuman Top 5 Architecture Festival Ke-16</h2>
+                    <p>
+                        Hari, Tanggal : 25 Februari 2023 <br>
+                        Tempat : Online via instagram <br>
+                        Waktu : Pk. 18.00 WIB
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-timeline">
+                    <h2>Presentasi Final Architecture festival Ke-16</h2>
+                    <p>
+                        Hari, Tanggal : Sabtu , 11 Maret 2023 <br>
+                        Tempat : Amphitheatre Gedung Q UK Petra <br>
+                        Waktu : Pk. 10:00-13:40 WIB
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-timeline">
+                    <h2>Pengumuman Pemenang Architecture Festival Ke-16</h2>
+                    <p>
+                        Hari, Tanggal : Minggu, 14 Mei 2023 <br>
+                        Tempat : Amphitheater Pakuwon City Mall, Surabaya <br>
+                        Waktu : Pk.20.04 - 20.16 WIB
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
 
     <section class="dark">
@@ -113,7 +218,7 @@ require_once "nav.php";
 
 
 
-
+    <script src="timeline.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
