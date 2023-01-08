@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="timeline.css">
+
+</head>
+
+<body>
+    <div class="setting">
+        <button id="myBtn" class="btn-setting">click</button>
+    </div>
+    <div id="myModal" class="modal" active="false">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="menu">
+                <div class="container-timeline" id="timeline">
+                    <div class="top-section">
+                        <h1>Animated Timeline</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem magnam aut provident ab vel,
+                            voluptatem,
+                            nisi quisquam error nihil sit quasi odio itaque corrupti minus amet nam. Exercitationem,
+                            nesciunt.
+
+                        </p>
+                    </div>
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Pendaftaran Early Bird Architecture Festival Ke-16</h2>
+                                <p>
+                                    Hari, Tanggal : 19 Dec 2022 - 31 Dec 2022 <br>
+                                    Tempat : Online via Google Form (petra.id/ArchFest2023RegistrationForm) <br>
+                                    Waktu : Pk. 00:00-23:59 WIB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Pendaftaran Normal Architecture Festival Ke-16</h2>
+                                <p>
+                                    Hari, Tanggal : 01 Jan 2023 - 31 Jan 2023 <br>
+                                    Tempat : Online via Google Form (petra.id/ArchFest2023RegistrationForm) <br>
+                                    Waktu : Pk. 0.00-23.59 WIB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Pengumpulan Karya (Online) Architecture Festival Ke-16</h2>
+                                <p>
+                                    Hari, Tanggal : 01 Januari 2023 - 11 Februari 2023 <br>
+                                    Tempat : Online via email <br>
+                                    Waktu : Pk. 22.00 WIB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Penjurian Tertutup Architecture Festival Ke-16</h2>
+                                <p>
+                                    Hari, Tanggal : 21 Februari 2023 <br>
+                                    Tempat : Online via zoom (petra.id/Archfest2023) <br>
+                                    Waktu : Pk. 12.00-16.25 WIB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Pengumuman Top 25 Architecture Festival Ke-16</h2>
+                                <p>
+                                    Hari, Tanggal : 23 Februari 2023 <br>
+                                    Tempat : Online via instagram <br>
+                                    Waktu : Pk. 18.00 WIB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Pengumuman Top 5 Architecture Festival Ke-16</h2>
+                                <p>
+                                    Hari, Tanggal : 25 Februari 2023 <br>
+                                    Tempat : Online via instagram <br>
+                                    Waktu : Pk. 18.00 WIB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Presentasi Final Architecture festival Ke-16</h2>
+                                <p>
+                                    Hari, Tanggal : Sabtu , 11 Maret 2023 <br>
+                                    Tempat : Amphitheatre Gedung Q UK Petra <br>
+                                    Waktu : Pk. 10:00-13:40 WIB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Pengumuman Pemenang Architecture Festival Ke-16</h2>
+                                <p>
+                                    Hari, Tanggal : Minggu, 14 Mei 2023 <br>
+                                    Tempat : Amphitheater Pakuwon City Mall, Surabaya <br>
+                                    Waktu : Pk.20.04 - 20.16 WIB
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="timeline.js"></script> -->
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        const keyboard = document.querySelector("body");
+
+        keyboard.addEventListener("keydown", e => {
+            console.log(e);
+            if (e.keyCode == 27) {
+                if ($("#myModal").attr("active") == "false") {
+                    modal.style.display = "block";
+                    $("#myModal").attr("active", "true");
+                    setTimeout(function () {
+                        modal.style.opacity = 1;
+                    }, 100);
+                } else {
+                    modal.style.display = "none";
+                    $("#myModal").attr("active", "false");
+                }
+            }
+        })
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+            setTimeout(function () {
+                modal.style.opacity = 1;
+            }, 100);
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
